@@ -29,6 +29,6 @@ function usePersistedReducer(reducer, initialState, key) {
   return [state, dispatch];
 }
 
-export function useShow(key = 'show') {
+export function useShows(key = 'show') {
   return usePersistedReducer(showsReducer, [], key);
 }
